@@ -1,0 +1,748 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>National Pharma — B2B Medical Distribution, Lahore</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<!-- ==================== SCROLL PROGRESS BAR ==================== -->
+<div id="scroll-progress"></div>
+
+<!-- ==================== CURSOR GLOW ==================== -->
+<div id="cursor-glow"></div>
+
+<!-- ==================== MOBILE MENU ==================== -->
+<div id="mobile-menu" role="dialog" aria-modal="true">
+  <button id="mob-close" style="position:absolute;top:1.5rem;right:1.5rem;background:none;border:none;cursor:pointer;color:#fff;">
+    <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M18 6L6 18M6 6l12 12"/></svg>
+  </button>
+  <a href="#hero" class="mob-link">Home</a>
+  <a href="#about" class="mob-link">About</a>
+  <a href="#services" class="mob-link">Services</a>
+  <a href="#b2b" class="mob-link">B2B Partners</a>
+  <a href="#reviews" class="mob-link">Reviews</a>
+  <a href="#contact" class="mob-link">Contact</a>
+</div>
+
+<!-- ==================== NAVBAR ==================== -->
+<nav id="navbar">
+  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between">
+    <a href="#hero" style="display:flex;align-items:center;gap:.75rem;text-decoration:none;">
+      <div style="width:42px;height:42px;background:linear-gradient(135deg,#C8102E,#a00d24);border-radius:11px;display:flex;align-items:center;justify-content:center;box-shadow:0 4px 14px rgba(200,16,46,.4);">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="8" y="2" width="6" height="18" rx="3" fill="white"/><rect x="2" y="8" width="18" height="6" rx="3" fill="white"/></svg>
+      </div>
+      <div>
+        <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;color:#fff;line-height:1.1;letter-spacing:-.01em;">National Pharma</div>
+        <div style="font-size:.6rem;color:rgba(255,255,255,.55);letter-spacing:.1em;text-transform:uppercase;">B2B Medical Distribution</div>
+      </div>
+    </a>
+    <div class="hidden md:flex items-center gap-7">
+      <a href="#hero" class="nav-link">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#b2b" class="nav-link">B2B</a>
+      <a href="#reviews" class="nav-link">Reviews</a>
+      <a href="#contact" class="nav-link">Contact</a>
+      <a href="tel:03218804391" class="btn-red" style="padding:.6rem 1.2rem;font-size:.8rem;">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+        Call Now
+      </a>
+    </div>
+    <button id="hamburger" class="md:hidden" style="background:none;border:none;cursor:pointer;display:flex;flex-direction:column;gap:5px;padding:.5rem;">
+      <span style="display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s;"></span>
+      <span style="display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s;"></span>
+      <span style="display:block;width:24px;height:2px;background:#fff;border-radius:2px;transition:all .3s;"></span>
+    </button>
+  </div>
+</nav>
+
+<!-- ==================== HERO ==================== -->
+<section id="hero">
+  <div class="mesh-grid"></div>
+  <div class="particles" id="particles"></div>
+  <div class="hero-diagonal"></div>
+
+  <!-- Rings -->
+  <div class="ring" style="width:500px;height:500px;top:-150px;right:-150px;animation-delay:0s;"></div>
+  <div class="ring" style="width:300px;height:300px;bottom:50px;left:-80px;animation-delay:-2s;"></div>
+  <div class="ring" style="width:180px;height:180px;top:30%;right:22%;animation-delay:-3.5s;"></div>
+
+  <!-- Big cross -->
+  <div class="bg-cross">
+    <svg viewBox="0 0 100 100" fill="white"><rect x="35" y="5" width="30" height="90" rx="14"/><rect x="5" y="35" width="90" height="30" rx="14"/></svg>
+  </div>
+
+  <!-- Pills -->
+  <div class="pill" style="width:90px;height:36px;background:rgba(255,255,255,.06);top:18%;left:8%;--r:-22deg;animation-duration:9s;"></div>
+  <div class="pill" style="width:60px;height:24px;background:rgba(200,16,46,.12);bottom:22%;left:14%;--r:12deg;animation-duration:7s;animation-delay:-3s;"></div>
+  <div class="pill" style="width:50px;height:20px;background:rgba(212,160,23,.1);bottom:40%;right:8%;--r:-38deg;animation-duration:11s;animation-delay:-5s;"></div>
+  <div class="pill" style="width:70px;height:28px;background:rgba(255,255,255,.04);top:60%;left:40%;--r:15deg;animation-duration:8s;animation-delay:-1s;"></div>
+
+  <!-- Gold shimmer top -->
+  <div style="position:absolute;top:0;left:0;right:0;height:2px;overflow:hidden;">
+    <div class="hero-shimmer"></div>
+  </div>
+
+  <!-- Glow orbs -->
+  <div class="glow-orb" style="width:300px;height:300px;background:rgba(10,107,75,.25);top:20%;left:30%;"></div>
+  <div class="glow-orb" style="width:200px;height:200px;background:rgba(200,16,46,.15);bottom:20%;right:25%;animation-delay:-3s;"></div>
+
+  <div class="max-w-7xl mx-auto px-6 w-full relative z-10" style="padding-top:9rem;padding-bottom:6rem;">
+    <div style="max-width:680px;">
+
+      <!-- Badge -->
+      <div class="hero-badge" style="display:inline-flex;align-items:center;gap:.6rem;background:rgba(212,160,23,.15);border:1px solid rgba(212,160,23,.3);border-radius:100px;padding:.45rem 1.1rem;margin-bottom:1.5rem;">
+        <div style="width:8px;height:8px;border-radius:50%;background:var(--gold-light);box-shadow:0 0 8px var(--gold);animation:pulse-dot 2s ease infinite;"></div>
+        <span style="font-size:.78rem;color:var(--gold-light);font-weight:600;letter-spacing:.04em;">Lahore's Premier B2B Pharmaceutical Distributor</span>
+      </div>
+
+      <!-- Headline with typewriter -->
+      <h1 class="hero-h1" style="font-size:clamp(2.6rem,6vw,4.2rem);font-weight:900;color:#fff;line-height:1.06;letter-spacing:-.03em;margin-bottom:1.25rem;">
+        Trusted Medical<br/>
+        Distribution<br/>
+        <span id="typewriter-text" style="background:linear-gradient(90deg,var(--gold),var(--gold-light),var(--gold));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;">Across Pakistan</span><span class="typing-cursor"></span>
+      </h1>
+
+      <p class="hero-sub" style="font-size:1.1rem;color:rgba(255,255,255,.75);line-height:1.75;max-width:540px;margin-bottom:2rem;">
+        We supply authentic, DRAP-compliant medicines exclusively to <strong style="color:rgba(255,255,255,.95);">pharmacies, hospitals, and clinics</strong> — not direct to consumers. Excellence in wholesale distribution, supply chain integrity, and life-saving medicine logistics.
+      </p>
+
+      <!-- CTAs -->
+      <div class="hero-btns" style="display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:2.5rem;">
+        <a href="#services" class="btn-red">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M20 7H4a2 2 0 00-2 2v6a2 2 0 002 2h16a2 2 0 002-2V9a2 2 0 00-2-2z"/><path d="M16 21V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v16"/></svg>
+          View Product Lines
+        </a>
+        <a href="#b2b" class="btn-ghost">
+          Become a B2B Partner
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+
+      <!-- Trust pills -->
+      <div class="hero-trust" style="display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2.5rem;">
+        <span class="badge" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15);">✓ DRAP Compliant</span>
+        <span class="badge" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15);">✓ Cold Chain Certified</span>
+        <span class="badge" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15);">✓ Pharmacy-Only Supply</span>
+        <span class="badge" style="background:rgba(255,255,255,.1);color:rgba(255,255,255,.85);border:1px solid rgba(255,255,255,.15);">✓ Same-Day Dispatch</span>
+      </div>
+
+      <!-- Stats -->
+      <div class="hero-stats" style="display:grid;grid-template-columns:repeat(4,1fr);gap:.75rem;max-width:560px;">
+        <div class="stat-card">
+          <div class="count-num" style="font-size:1.8rem;color:#fff;" data-target="10" data-suffix="+">0</div>
+          <div style="font-size:.68rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;">Years</div>
+        </div>
+        <div class="stat-card">
+          <div class="count-num" style="font-size:1.8rem;color:#fff;" data-target="500" data-suffix="+">0</div>
+          <div style="font-size:.68rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;">Brands</div>
+        </div>
+        <div class="stat-card">
+          <div class="count-num" style="font-size:1.8rem;color:#fff;" data-target="200" data-suffix="+">0</div>
+          <div style="font-size:.68rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;">Pharmacies</div>
+        </div>
+        <div class="stat-card">
+          <div class="count-num" style="font-size:1.8rem;color:#fff;" data-target="24" data-suffix="h">0</div>
+          <div style="font-size:.68rem;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.07em;margin-top:2px;">Delivery SLA</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Scroll indicator -->
+  <div style="position:absolute;bottom:2rem;left:50%;transform:translateX(-50%);text-align:center;animation:scroll-bounce 2s ease infinite;">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+  </div>
+</section>
+
+<!-- ==================== TRUST BAR ==================== -->
+<div class="trust-bar" style="padding:1.25rem 0;overflow:hidden;">
+  <div class="marquee-wrapper">
+    <div class="marquee-track" id="marquee"></div>
+  </div>
+</div>
+
+<!-- ==================== ABOUT ==================== -->
+<section id="about" style="padding:6rem 0;background:#fff;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:4rem;align-items:center;margin-bottom:5rem;" class="about-grid">
+
+      <div class="reveal-left">
+        <div class="eyebrow">Who We Are</div>
+        <div class="divider-bar"></div>
+        <h2 class="sec-title" style="font-size:clamp(2rem,3.5vw,2.75rem);margin-bottom:1.25rem;">Lahore's Most Reliable Pharma Distribution Partner</h2>
+        <p style="font-size:1rem;color:var(--slate);line-height:1.8;margin-bottom:1.1rem;">
+          National Pharma is a leading B2B pharmaceutical distributor headquartered at Kotlakhpat, Lahore. We operate exclusively in the wholesale supply chain — our medicines go directly to <strong>registered pharmacies, hospitals, dispensaries, and clinics</strong>, not individual consumers.
+        </p>
+        <p style="font-size:1rem;color:var(--slate);line-height:1.8;margin-bottom:1.75rem;">
+          With a robust cold chain infrastructure, verified sourcing from DRAP-approved manufacturers, and a dedicated logistics fleet, we ensure every batch arrives authenticated, in-spec, and on time.
+        </p>
+        <div style="display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:2rem;">
+          <span class="badge badge-green">✓ Wholesale Only</span>
+          <span class="badge badge-green">✓ Pharmacy &amp; Hospital Supply</span>
+          <span class="badge badge-green">✓ Verified Sourcing</span>
+          <span class="badge badge-red">B2B Clients Only</span>
+        </div>
+        <a href="#contact" class="btn-green">Get a Wholesale Quote →</a>
+      </div>
+
+      <div class="reveal-right">
+        <div style="background:linear-gradient(135deg,#e6f4f0,#f0faf7);border-radius:22px;padding:2.5rem;position:relative;overflow:hidden;">
+          <div style="position:absolute;top:-25px;right:-25px;width:130px;height:130px;border-radius:50%;background:rgba(10,107,75,.08);"></div>
+          <div style="position:absolute;bottom:-35px;left:-35px;width:160px;height:160px;border-radius:50%;background:rgba(200,16,46,.06);"></div>
+          <div style="position:relative;z-index:1;">
+            <div style="width:72px;height:72px;background:var(--emerald);border-radius:18px;display:flex;align-items:center;justify-content:center;margin-bottom:1.5rem;box-shadow:0 8px 24px rgba(10,107,75,.35);">
+              <svg width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M19 3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2V5a2 2 0 00-2-2z"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <h3 style="font-size:1.4rem;font-weight:700;margin-bottom:.75rem;">Our Distribution Model</h3>
+            <p style="color:var(--slate);line-height:1.7;font-size:.9375rem;margin-bottom:1.5rem;">We are a pure-play B2B distributor. Pharmacies place bulk orders, we process and deliver within 24 hours across Lahore and Punjab.</p>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.75rem;">
+              <div style="background:#fff;border-radius:12px;padding:1rem;text-align:center;">
+                <div style="font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;color:var(--emerald);">100%</div>
+                <div style="font-size:.72rem;color:var(--slate);font-weight:500;">B2B Only</div>
+              </div>
+              <div style="background:#fff;border-radius:12px;padding:1rem;text-align:center;">
+                <div style="font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;color:var(--red);">24h</div>
+                <div style="font-size:.72rem;color:var(--slate);font-weight:500;">Delivery SLA</div>
+              </div>
+              <div style="background:#fff;border-radius:12px;padding:1rem;text-align:center;">
+                <div style="font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;color:var(--blue-accent);">500+</div>
+                <div style="font-size:.72rem;color:var(--slate);font-weight:500;">Brands Stocked</div>
+              </div>
+              <div style="background:#fff;border-radius:12px;padding:1rem;text-align:center;">
+                <div style="font-family:'Poppins',sans-serif;font-size:1.6rem;font-weight:800;color:var(--gold);">★ 4.9</div>
+                <div style="font-size:.72rem;color:var(--slate);font-weight:500;">Partner Rating</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Leadership -->
+    <div class="reveal" style="text-align:center;margin-bottom:2.5rem;">
+      <div class="eyebrow">Our Leadership</div>
+      <div class="divider-bar center"></div>
+      <h2 class="sec-title" style="font-size:clamp(1.75rem,3vw,2.25rem);">The Team Behind National Pharma</h2>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem;" class="leaders-grid">
+
+      <div class="leader-card reveal delay-100">
+        <div style="width:76px;height:76px;border-radius:50%;margin:0 auto 1rem;background:linear-gradient(135deg,var(--emerald),var(--emerald-light));display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:700;color:#fff;box-shadow:0 6px 18px rgba(10,107,75,.3);">MS</div>
+        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:.2rem;">M Sarwar</h3>
+      
+        <div style="font-size:.78rem;color:var(--red);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.875rem;">Managing Director</div>
+        <p style="font-size:.875rem;color:var(--slate);line-height:1.65;">Visionary leader driving strategy, supply chain excellence, and long-term pharmaceutical partnerships across Pakistan.</p>
+        <div style="margin-top:1.1rem;padding-top:1.1rem;border-top:1px solid #E2E8F0;display:flex;justify-content:center;gap:.5rem;">
+          <span class="badge badge-green">Strategy</span>
+          <span class="badge badge-green">Leadership</span>
+        </div>
+      </div>
+
+      <div class="leader-card reveal delay-200">
+        <div style="width:76px;height:76px;border-radius:50%;margin:0 auto 1rem;background:linear-gradient(135deg,var(--red),var(--red-dark));display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:700;color:#fff;box-shadow:0 6px 18px rgba(200,16,46,.3);">MA</div>
+        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:.2rem;">Mirza M Ashraf</h3>
+        <div style="font-size:.78rem;color:var(--red);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.875rem;">Director</div>
+        <p style="font-size:.875rem;color:var(--slate);line-height:1.65;">Overseeing procurement, vendor relationships, and quality assurance across all pharmaceutical product lines.</p>
+        <div style="margin-top:1.1rem;padding-top:1.1rem;border-top:1px solid #E2E8F0;display:flex;justify-content:center;gap:.5rem;">
+          <span class="badge badge-green">Procurement</span>
+          <span class="badge badge-green">QA</span>
+        </div>
+      </div>
+
+      <div class="leader-card reveal delay-300">
+        <div style="width:76px;height:76px;border-radius:50%;margin:0 auto 1rem;background:linear-gradient(135deg,#1a6fba,#0d4d8a);display:flex;align-items:center;justify-content:center;font-family:'Poppins',sans-serif;font-size:1.4rem;font-weight:700;color:#fff;box-shadow:0 6px 18px rgba(26,111,186,.3);">MF</div>
+        <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:.2rem;">Mirza M Farooq</h3>
+        <div style="font-size:.78rem;color:var(--red);font-weight:600;letter-spacing:.06em;text-transform:uppercase;margin-bottom:.875rem;">Director</div>
+        <p style="font-size:.875rem;color:var(--slate);line-height:1.65;">Managing B2B logistics, distribution networks, and pharmacy partner relations for seamless delivery experiences.</p>
+        <div style="margin-top:1.1rem;padding-top:1.1rem;border-top:1px solid #E2E8F0;display:flex;justify-content:center;gap:.5rem;">
+          <span class="badge badge-green">Logistics</span>
+          <span class="badge badge-green">Partners</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== SERVICES ==================== -->
+<section id="services" style="padding:6rem 0;background:#F8FAFC;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="text-align:center;margin-bottom:3.5rem;" class="reveal">
+      <div class="eyebrow">Our Product Lines</div>
+      <div class="divider-bar center"></div>
+      <h2 class="sec-title" style="font-size:clamp(2rem,3.5vw,2.75rem);margin-bottom:.75rem;">We Deal All Kinds Of Medicine</h2>
+      <p style="font-size:1.0625rem;color:var(--slate);max-width:520px;margin:0 auto;">In Wholesale &amp; Retail — supplied exclusively to registered pharmacies, hospitals, and healthcare facilities.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;margin-bottom:2rem;" class="services-grid-top">
+      <div class="service-card reveal delay-100">
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;">
+          <div class="service-icon" style="flex-shrink:0;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="1.8"><path d="M9 3H5a2 2 0 00-2 2v4m6-6h10a2 2 0 012 2v4M9 3v18m0 0h10a2 2 0 002-2V9M9 21H5a2 2 0 01-2-2V9m0 0h18"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:.5rem;">Prescription Drugs</h3>
+            <p style="font-size:.875rem;color:var(--slate);line-height:1.7;margin-bottom:.875rem;">Complete range of Rx medicines — antibiotics, cardiovascular, oncology, diabetes, respiratory, and more. All DRAP-verified, branded and generic.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+              <span class="badge badge-green">Antibiotics</span>
+              <span class="badge badge-green">Cardio</span>
+              <span class="badge badge-green">Diabetes</span>
+              <span class="badge badge-green">Oncology</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card reveal delay-200">
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;">
+          <div class="service-icon" style="flex-shrink:0;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="1.8"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:.5rem;">OTC Medicines</h3>
+            <p style="font-size:.875rem;color:var(--slate);line-height:1.7;margin-bottom:.875rem;">Over-the-counter products, vitamins, supplements, pain relief, cough &amp; cold, digestive health — bulk pharmacy supply at wholesale rates.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+              <span class="badge badge-green">Vitamins</span>
+              <span class="badge badge-green">Pain Relief</span>
+              <span class="badge badge-green">Wellness</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(2,1fr);gap:1.5rem;" class="services-grid-bot">
+      <div class="service-card reveal delay-300">
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;">
+          <div class="service-icon" style="flex-shrink:0;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="1.8"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:.5rem;">Medical Equipment &amp; Supplies</h3>
+            <p style="font-size:.875rem;color:var(--slate);line-height:1.7;margin-bottom:.875rem;">Surgical supplies, diagnostic tools, gloves, syringes, dressings, and hospital-grade disposables from certified manufacturers.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+              <span class="badge badge-green">Surgical</span>
+              <span class="badge badge-green">Diagnostic</span>
+              <span class="badge badge-green">Disposables</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="service-card reveal delay-400">
+        <div style="display:flex;align-items:flex-start;gap:1.25rem;">
+          <div class="service-icon" style="flex-shrink:0;">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="1.8"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+          </div>
+          <div>
+            <h3 style="font-size:1.1rem;font-weight:700;margin-bottom:.5rem;">B2B Logistics &amp; Distribution</h3>
+            <p style="font-size:.875rem;color:var(--slate);line-height:1.7;margin-bottom:.875rem;">Temperature-controlled cold chain, scheduled bulk deliveries, and last-mile distribution across Lahore and all of Punjab on agreed SLAs.</p>
+            <div style="display:flex;flex-wrap:wrap;gap:.4rem;">
+              <span class="badge badge-green">Cold Chain</span>
+              <span class="badge badge-green">Punjab Coverage</span>
+              <span class="badge badge-red">Bulk Orders</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== B2B SECTION ==================== -->
+<section id="b2b" class="b2b-banner" style="padding:6rem 0;">
+  <div class="glow-orb" style="width:350px;height:350px;background:rgba(10,107,75,.2);top:-80px;left:-80px;"></div>
+  <div class="glow-orb" style="width:250px;height:250px;background:rgba(200,16,46,.15);bottom:-60px;right:-60px;animation-delay:-2s;"></div>
+
+  <div class="max-w-7xl mx-auto px-6" style="position:relative;z-index:1;">
+    <div style="text-align:center;margin-bottom:4rem;" class="reveal">
+      <div class="eyebrow" style="color:var(--gold-light);">For Business Partners</div>
+      <div style="width:48px;height:4px;background:linear-gradient(90deg,var(--gold),var(--gold-light));border-radius:2px;margin:.8rem auto;"></div>
+      <h2 class="sec-title" style="font-size:clamp(2rem,3.5vw,2.75rem);color:#fff;margin-bottom:.75rem;">We Supply to Pharmacies &amp; Healthcare Facilities Only</h2>
+      <p style="font-size:1.0625rem;color:rgba(255,255,255,.65);max-width:580px;margin:0 auto;">National Pharma is a B2B-only distributor. We do not sell to walk-in customers or the general public. Our supply partners are registered pharmacies, hospitals, clinics, and dispensaries.</p>
+    </div>
+
+    <!-- Who we supply -->
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;margin-bottom:4rem;" class="b2b-grid">
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.75rem;text-align:center;transition:all .3s;" onmouseover="this.style.background='rgba(255,255,255,.1)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="width:56px;height:56px;border-radius:14px;background:rgba(10,107,75,.4);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+        </div>
+        <h4 style="color:#fff;font-size:1rem;font-weight:600;margin-bottom:.4rem;">Pharmacies</h4>
+        <p style="color:rgba(255,255,255,.55);font-size:.8125rem;line-height:1.6;">Registered retail &amp; wholesale pharmacies across Lahore and Punjab.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.75rem;text-align:center;transition:all .3s;" onmouseover="this.style.background='rgba(255,255,255,.1)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="width:56px;height:56px;border-radius:14px;background:rgba(200,16,46,.35);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+        </div>
+        <h4 style="color:#fff;font-size:1rem;font-weight:600;margin-bottom:.4rem;">Hospitals</h4>
+        <p style="color:rgba(255,255,255,.55);font-size:.8125rem;line-height:1.6;">Private and public hospitals with in-house dispensaries and wards.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.75rem;text-align:center;transition:all .3s;" onmouseover="this.style.background='rgba(255,255,255,.1)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="width:56px;height:56px;border-radius:14px;background:rgba(26,111,186,.4);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+        </div>
+        <h4 style="color:#fff;font-size:1rem;font-weight:600;margin-bottom:.4rem;">Clinics</h4>
+        <p style="color:rgba(255,255,255,.55);font-size:.8125rem;line-height:1.6;">Specialist and general practitioner clinics requiring regular medicine supply.</p>
+      </div>
+      <div style="background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.1);border-radius:18px;padding:1.75rem;text-align:center;transition:all .3s;" onmouseover="this.style.background='rgba(255,255,255,.1)'" onmouseout="this.style.background='rgba(255,255,255,.06)'">
+        <div style="width:56px;height:56px;border-radius:14px;background:rgba(212,160,23,.35);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 00-2-2h-4a2 2 0 00-2 2v2"/></svg>
+        </div>
+        <h4 style="color:#fff;font-size:1rem;font-weight:600;margin-bottom:.4rem;">Dispensaries</h4>
+        <p style="color:rgba(255,255,255,.55);font-size:.8125rem;line-height:1.6;">NGO dispensaries, community health centres, and charitable health units.</p>
+      </div>
+    </div>
+
+    <!-- Process steps -->
+    <div style="text-align:center;margin-bottom:2.5rem;">
+      <h3 style="color:#fff;font-size:1.4rem;font-weight:700;">How Ordering Works</h3>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:1.25rem;position:relative;" class="process-grid">
+      <div style="position:absolute;top:50%;left:12%;right:12%;height:2px;background:rgba(255,255,255,.1);z-index:0;"></div>
+
+      <div class="process-step reveal delay-100" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);">
+        <div class="step-num">01</div>
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(10,107,75,.4);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+        </div>
+        <h4 style="color:#fff;font-size:.9375rem;font-weight:600;margin-bottom:.4rem;">Contact Us</h4>
+        <p style="color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.6;">Call or WhatsApp to register your pharmacy as a partner.</p>
+      </div>
+
+      <div class="process-step reveal delay-200" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);">
+        <div class="step-num">02</div>
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(200,16,46,.35);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+        </div>
+        <h4 style="color:#fff;font-size:.9375rem;font-weight:600;margin-bottom:.4rem;">Place Order</h4>
+        <p style="color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.6;">Send your medicine list with quantities via call or WhatsApp.</p>
+      </div>
+
+      <div class="process-step reveal delay-300" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);">
+        <div class="step-num">03</div>
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(26,111,186,.4);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+        </div>
+        <h4 style="color:#fff;font-size:.9375rem;font-weight:600;margin-bottom:.4rem;">We Process</h4>
+        <p style="color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.6;">Order verified, packed, and invoiced — all within hours.</p>
+      </div>
+
+      <div class="process-step reveal delay-400" style="background:rgba(255,255,255,.05);border-color:rgba(255,255,255,.1);">
+        <div class="step-num">04</div>
+        <div style="width:44px;height:44px;border-radius:12px;background:rgba(212,160,23,.35);margin:0 auto 1rem;display:flex;align-items:center;justify-content:center;">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="1.5"><rect x="1" y="3" width="15" height="13"/><polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/><circle cx="5.5" cy="18.5" r="2.5"/><circle cx="18.5" cy="18.5" r="2.5"/></svg>
+        </div>
+        <h4 style="color:#fff;font-size:.9375rem;font-weight:600;margin-bottom:.4rem;">Delivered</h4>
+        <p style="color:rgba(255,255,255,.5);font-size:.8rem;line-height:1.6;">Same-day or next-day delivery to your pharmacy door.</p>
+      </div>
+    </div>
+
+    <div style="text-align:center;margin-top:3rem;" class="reveal">
+      <a href="#contact" class="btn-red" style="font-size:1rem;">Register Your Pharmacy as a Partner →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== REVIEWS ==================== -->
+<section id="reviews" class="review-section" style="padding:6rem 0;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="text-align:center;margin-bottom:3.5rem;" class="reveal">
+      <div class="eyebrow">Pharmacy Partner Reviews</div>
+      <div class="divider-bar center"></div>
+      <h2 class="sec-title" style="font-size:clamp(2rem,3.5vw,2.75rem);margin-bottom:.75rem;">What Our B2B Partners Say</h2>
+      <p style="font-size:1.0625rem;color:var(--slate);max-width:520px;margin:0 auto;">Reviews from registered pharmacy owners, hospital procurement teams, and clinic managers across Lahore and Punjab.</p>
+
+      <!-- Overall rating -->
+      <div style="display:inline-flex;align-items:center;gap:1rem;background:#fff;border:1px solid #E2E8F0;border-radius:100px;padding:.75rem 1.75rem;margin-top:1.5rem;box-shadow:0 4px 20px rgba(10,107,75,.08);">
+        <div style="font-family:'Poppins',sans-serif;font-size:2rem;font-weight:800;color:var(--navy);">4.9</div>
+        <div>
+          <div style="display:flex;gap:2px;margin-bottom:2px;">
+            <span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span><span class="star-fill">★</span>
+          </div>
+          <div style="font-size:.78rem;color:var(--slate);font-weight:500;">Based on <span id="review-count">0</span> partner reviews</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Filter tabs -->
+    <div style="display:flex;gap:.75rem;justify-content:center;margin-bottom:2.5rem;flex-wrap:wrap;" class="reveal">
+      <button class="tab-btn active" onclick="filterReviews('all',this)">All Reviews</button>
+      <button class="tab-btn" onclick="filterReviews('pharmacy',this)">Pharmacies</button>
+      <button class="tab-btn" onclick="filterReviews('hospital',this)">Hospitals</button>
+      <button class="tab-btn" onclick="filterReviews('clinic',this)">Clinics</button>
+      <button class="tab-btn" onclick="filterReviews('5',this)">★ 5 Star</button>
+    </div>
+
+    <!-- Review cards grid -->
+    <div id="reviews-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:1.25rem;margin-bottom:4rem;">
+      <!-- populated by JS -->
+    </div>
+
+    <!-- Submit review form -->
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:start;" class="review-form-grid">
+      <div class="reveal-left">
+        <div class="eyebrow">Share Your Experience</div>
+        <div class="divider-bar"></div>
+        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:.75rem;">Leave a Review</h3>
+        <p style="color:var(--slate);font-size:.9375rem;line-height:1.7;margin-bottom:1.5rem;">Are you a pharmacy owner, hospital manager, or clinic in-charge who has worked with National Pharma? Your review helps other healthcare facilities make informed partnership decisions.</p>
+        <div style="display:flex;flex-direction:column;gap:.75rem;">
+          <div style="display:flex;align-items:center;gap:.75rem;">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--emerald-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3s9 4.03 9 9z"/></svg>
+            </div>
+            <span style="font-size:.875rem;color:var(--slate);">Reviews are verified — B2B partners only</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:.75rem;">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--emerald-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3s9 4.03 9 9z"/></svg>
+            </div>
+            <span style="font-size:.875rem;color:var(--slate);">Your business name will be displayed (optional)</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:.75rem;">
+            <div style="width:36px;height:36px;border-radius:50%;background:var(--emerald-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="2"><path d="M9 12l2 2 4-4"/><path d="M21 12c0 4.97-4.03 9-9 9S3 16.97 3 12 7.03 3 12 3s9 4.03 9 9z"/></svg>
+            </div>
+            <span style="font-size:.875rem;color:var(--slate);">Helps other healthcare facilities find reliable suppliers</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="review-form reveal-right">
+        <h4 style="font-size:1.125rem;font-weight:700;margin-bottom:.3rem;">Write Your Review</h4>
+        <p style="font-size:.8125rem;color:var(--slate);margin-bottom:1.5rem;">Business partners of National Pharma only</p>
+
+        <div style="display:flex;flex-direction:column;gap:1.1rem;">
+          <div>
+            <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Your Name *</label>
+            <input type="text" id="rv-name" class="form-input" placeholder="Dr. Ahmed Khan / Muhammad Ali"/>
+          </div>
+          <div>
+            <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Business Name (optional)</label>
+            <input type="text" id="rv-biz" class="form-input" placeholder="Al-Shifa Pharmacy, Lahore"/>
+          </div>
+          <div>
+            <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Business Type *</label>
+            <select id="rv-type" class="form-input" style="cursor:pointer;">
+              <option value="">Select type...</option>
+              <option value="pharmacy">Pharmacy</option>
+              <option value="hospital">Hospital</option>
+              <option value="clinic">Clinic</option>
+              <option value="dispensary">Dispensary</option>
+            </select>
+          </div>
+          <div>
+            <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.6rem;">Your Rating *</label>
+            <div class="star-selector" id="star-selector">
+              <input type="radio" name="rating" id="s5" value="5"/><label for="s5">★</label>
+              <input type="radio" name="rating" id="s4" value="4"/><label for="s4">★</label>
+              <input type="radio" name="rating" id="s3" value="3"/><label for="s3">★</label>
+              <input type="radio" name="rating" id="s2" value="2"/><label for="s2">★</label>
+              <input type="radio" name="rating" id="s1" value="1"/><label for="s1">★</label>
+            </div>
+          </div>
+          <div>
+            <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Your Review *</label>
+            <textarea id="rv-text" class="form-input" rows="4" placeholder="Tell other pharmacies about your experience with National Pharma's supply quality, delivery, and service..."></textarea>
+          </div>
+          <button class="btn-green" onclick="submitReview()" style="width:100%;justify-content:center;font-size:1rem;">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+            Submit Review
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== CONTACT ==================== -->
+<section id="contact" style="padding:6rem 0;background:#fff;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="text-align:center;margin-bottom:3.5rem;" class="reveal">
+      <div class="eyebrow">Get In Touch</div>
+      <div class="divider-bar center"></div>
+      <h2 class="sec-title" style="font-size:clamp(2rem,3.5vw,2.75rem);margin-bottom:.75rem;">Contact Our Experts</h2>
+      <p style="font-size:1.0625rem;color:var(--slate);max-width:480px;margin:0 auto;">Reach out to place a bulk order, register your pharmacy, or discuss supply arrangements.</p>
+    </div>
+
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;">
+      <!-- Left: info + map -->
+      <div class="reveal-left">
+        <div style="display:flex;flex-direction:column;gap:.875rem;margin-bottom:1.75rem;">
+          <div class="contact-info-card">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--emerald-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:.875rem;margin-bottom:.2rem;">Our Address</div>
+              <div style="font-size:.875rem;color:var(--slate);">Akbar Shaheed Colony, Quaid-e-Azam Road,<br/>Kotlakhpat, Lahore</div>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--emerald-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 11a19.79 19.79 0 01-3.07-8.67A2 2 0 012 .18h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 14.92v2z"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:.875rem;margin-bottom:.4rem;">Contact Numbers</div>
+              <a href="tel:03218804391" style="display:flex;align-items:center;gap:.5rem;text-decoration:none;margin-bottom:.3rem;">
+                <span style="font-size:.875rem;color:var(--emerald);font-weight:600;">0321-8804391</span>
+                <span class="badge badge-green" style="font-size:.65rem;">Primary · WhatsApp</span>
+              </a>
+              <a href="tel:03218858054" style="text-decoration:none;">
+                <span style="font-size:.875rem;color:var(--slate);font-weight:500;">0321-8858054</span>
+                <span class="badge badge-green" style="font-size:.65rem;">Primary · WhatsApp</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="contact-info-card">
+            <div style="width:44px;height:44px;border-radius:10px;background:var(--emerald-pale);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="var(--emerald)" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            </div>
+            <div>
+              <div style="font-family:'Poppins',sans-serif;font-weight:600;font-size:.875rem;margin-bottom:.2rem;">Email Us</div>
+              <a href="mailto:Nationalpharmalhr@gmail.com" style="font-size:.875rem;color:var(--emerald);font-weight:500;text-decoration:none;">Nationalpharmalhr@gmail.com</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Map -->
+        <div style="border-radius:16px;overflow:hidden;border:1px solid #E2E8F0;">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m12!1m8!1m3!1d108900.20872884493!2d74.2490387!3d31.465568!3m2!1i1024!2i768!4f13.1!2m1!1snational%20pharma%20kot%20lahore!5e0!3m2!1sen!2s!4v1780993786575!5m2!1sen!2s"
+            width="100%" height="240" style="border:0;display:block;" allowfullscreen loading="lazy" title="National Pharma Location">
+          </iframe>
+        </div>
+      </div>
+
+      <!-- Right: form -->
+      <div class="reveal-right">
+        <div style="background:#F8FAFC;border-radius:20px;padding:2.5rem;border:1px solid #E2E8F0;">
+          <h3 style="font-size:1.3rem;font-weight:700;margin-bottom:.3rem;">Send a Message</h3>
+          <p style="font-size:.8125rem;color:var(--slate);margin-bottom:1.75rem;">For pharmacy registration, bulk orders, or general enquiries.</p>
+          <div style="display:flex;flex-direction:column;gap:1.1rem;">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:.875rem;">
+              <div>
+                <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Full Name *</label>
+                <input type="text" id="cf-name" class="form-input" placeholder="Your name"/>
+              </div>
+              <div>
+                <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Business Type</label>
+                <select id="cf-btype" class="form-input">
+                  <option>Pharmacy</option><option>Hospital</option><option>Clinic</option><option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div>
+              <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Email *</label>
+              <input type="email" id="cf-email" class="form-input" placeholder="you@pharmacy.com"/>
+            </div>
+            <div>
+              <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Phone</label>
+              <input type="tel" id="cf-phone" class="form-input" placeholder="03xx-xxxxxxx"/>
+            </div>
+            <div>
+              <label style="display:block;font-size:.8125rem;font-weight:600;margin-bottom:.4rem;">Message *</label>
+              <textarea id="cf-message" class="form-input" rows="5" placeholder="Tell us your medicine requirements, quantities, and delivery location..."></textarea>
+            </div>
+            <button class="btn-green" onclick="handleContact()" style="width:100%;justify-content:center;font-size:1rem;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+              Send Message
+            </button>
+          </div>
+        </div>
+
+        <a href="https://wa.me/923218804391?text=Hello%2C%20I%20am%20interested%20in%20partnering%20with%20National%20Pharma%20for%20medicine%20supply." target="_blank"
+           style="display:flex;align-items:center;gap:.875rem;background:#25D366;color:#fff;padding:1rem 1.5rem;border-radius:12px;margin-top:1rem;text-decoration:none;font-family:'Poppins',sans-serif;font-weight:600;transition:background .2s;"
+           onmouseover="this.style.background='#1ea855'" onmouseout="this.style.background='#25D366'">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+          WhatsApp — Quick Response for B2B Orders
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ==================== FOOTER ==================== -->
+<footer style="padding:4rem 0 2rem;">
+  <div class="max-w-7xl mx-auto px-6">
+    <div style="display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:2.5rem;margin-bottom:3rem;" class="footer-grid">
+      <div>
+        <div style="display:flex;align-items:center;gap:.75rem;margin-bottom:1.25rem;">
+          <div style="width:42px;height:42px;background:linear-gradient(135deg,var(--red),var(--red-dark));border-radius:10px;display:flex;align-items:center;justify-content:center;">
+            <svg width="22" height="22" viewBox="0 0 22 22" fill="none"><rect x="8" y="2" width="6" height="18" rx="3" fill="white"/><rect x="2" y="8" width="18" height="6" rx="3" fill="white"/></svg>
+          </div>
+          <div>
+            <div style="font-family:'Poppins',sans-serif;font-weight:800;font-size:1.05rem;color:#fff;">National Pharma</div>
+            <div style="font-size:.6rem;color:rgba(255,255,255,.45);letter-spacing:.1em;text-transform:uppercase;">B2B Distribution · Lahore</div>
+          </div>
+        </div>
+        <p style="font-size:.875rem;color:rgba(255,255,255,.5);line-height:1.8;max-width:300px;margin-bottom:1.5rem;">Exclusively supplying authentic pharmaceuticals to registered pharmacies, hospitals, and clinics across Pakistan. B2B only — no retail to individuals.</p>
+        <div style="display:flex;gap:.75rem;">
+          <a href="tel:03218804391" style="display:flex;align-items:center;gap:.4rem;background:rgba(10,107,75,.25);border:1px solid rgba(10,107,75,.4);padding:.45rem .9rem;border-radius:8px;text-decoration:none;color:#4ade80;font-size:.8rem;font-weight:600;">📞 Call</a>
+          <a href="https://wa.me/923218804391" target="_blank" style="display:flex;align-items:center;gap:.4rem;background:rgba(37,211,102,.12);border:1px solid rgba(37,211,102,.3);padding:.45rem .9rem;border-radius:8px;text-decoration:none;color:#25D366;font-size:.8rem;font-weight:600;">💬 WhatsApp</a>
+          <a href="mailto:Nationalpharmalhr@gmail.com" style="display:flex;align-items:center;gap:.4rem;background:rgba(200,16,46,.15);border:1px solid rgba(200,16,46,.3);padding:.45rem .9rem;border-radius:8px;text-decoration:none;color:#f87171;font-size:.8rem;font-weight:600;">✉ Email</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="color:#fff;font-size:.9375rem;font-weight:600;margin-bottom:1.1rem;">Quick Links</h4>
+        <div style="display:flex;flex-direction:column;gap:.55rem;">
+          <a href="#hero" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.875rem;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.5)'">Home</a>
+          <a href="#about" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.875rem;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.5)'">About Us</a>
+          <a href="#services" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.875rem;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.5)'">Services</a>
+          <a href="#b2b" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.875rem;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.5)'">B2B Partners</a>
+          <a href="#reviews" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.875rem;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.5)'">Reviews</a>
+          <a href="#contact" style="color:rgba(255,255,255,.5);text-decoration:none;font-size:.875rem;transition:color .2s;" onmouseover="this.style.color='#fff'" onmouseout="this.style.color='rgba(255,255,255,.5)'">Contact</a>
+        </div>
+      </div>
+      <div>
+        <h4 style="color:#fff;font-size:.9375rem;font-weight:600;margin-bottom:1.1rem;">We Supply To</h4>
+        <div style="display:flex;flex-direction:column;gap:.55rem;">
+          <span style="color:rgba(255,255,255,.5);font-size:.875rem;">✓ Registered Pharmacies</span>
+          <span style="color:rgba(255,255,255,.5);font-size:.875rem;">✓ Private Hospitals</span>
+          <span style="color:rgba(255,255,255,.5);font-size:.875rem;">✓ Government Hospitals</span>
+          <span style="color:rgba(255,255,255,.5);font-size:.875rem;">✓ GP Clinics</span>
+          <span style="color:rgba(255,255,255,.5);font-size:.875rem;">✓ Specialist Clinics</span>
+          <span style="color:rgba(255,255,255,.5);font-size:.875rem;">✓ Dispensaries</span>
+        </div>
+      </div>
+      <div>
+        <h4 style="color:#fff;font-size:.9375rem;font-weight:600;margin-bottom:1.1rem;">Contact</h4>
+        <div style="display:flex;flex-direction:column;gap:.65rem;">
+          <div style="color:rgba(255,255,255,.5);font-size:.8125rem;line-height:1.55;">📍 Akbar Shaheed Colony, Quaid-e-Azam Road, Kotlakhpat, Lahore</div>
+          <a href="tel:03218804391" style="color:rgba(255,255,255,.5);font-size:.8125rem;text-decoration:none;" onmouseover="this.style.color='#4ade80'" onmouseout="this.style.color='rgba(255,255,255,.5)'">📞 0321-8804391</a>
+          <a href="tel:03218858054" style="color:rgba(255,255,255,.5);font-size:.8125rem;text-decoration:none;" onmouseover="this.style.color='#4ade80'" onmouseout="this.style.color='rgba(255,255,255,.5)'">📞 0321-8858054</a>
+          <a href="mailto:Nationalpharmalhr@gmail.com" style="color:rgba(255,255,255,.5);font-size:.8125rem;text-decoration:none;word-break:break-all;" onmouseover="this.style.color='#4ade80'" onmouseout="this.style.color='rgba(255,255,255,.5)'">✉ Nationalpharmalhr@gmail.com</a>
+        </div>
+      </div>
+    </div>
+    <div style="border-top:1px solid rgba(255,255,255,.07);padding-top:1.75rem;display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:1rem;">
+      <div style="font-size:.8rem;color:rgba(255,255,255,.3);">© 2024 National Pharma. All rights reserved. Lahore, Pakistan.</div>
+      <div style="display:flex;gap:.5rem;flex-wrap:wrap;">
+        <span class="badge" style="background:rgba(10,107,75,.2);color:rgba(255,255,255,.45);font-size:.65rem;">DRAP Compliant</span>
+        <span class="badge" style="background:rgba(10,107,75,.2);color:rgba(255,255,255,.45);font-size:.65rem;">Cold Chain</span>
+        <span class="badge" style="background:rgba(10,107,75,.2);color:rgba(255,255,255,.45);font-size:.65rem;">B2B Only</span>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating WhatsApp -->
+<a href="https://wa.me/923218804391" id="wa-fab" target="_blank" title="Chat on WhatsApp">
+  <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413Z"/></svg>
+</a>
+
+<!-- Toast -->
+<div id="toast"></div>
+
+<!-- Load JS last so DOM is ready -->
+<script src="main.js"></script>
+</body>
+</html>
